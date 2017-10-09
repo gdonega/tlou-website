@@ -1,0 +1,102 @@
+@font-face {
+    font-family: He;
+    src: url('../fonts/HeadlinerNo45.ttf');
+}
+
+* {
+    font-family: He, Segoe UI;
+
+}
+
+.input-container span.border{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 0px;
+    background-color: black;
+    
+    transition: height .2s;
+}
+
+.input-container input:hover + span{
+    height: 30px;
+}
+
+
+h1 {
+    font-size: 55pt;
+}
+
+h2 {
+    font-size: 50pt;
+}
+
+h3 {
+    font-size: 40pt;
+}
+
+h4 {
+    font-size: 30pt;
+}
+
+h5 {
+    font-size: 20pt;
+}
+
+h6 {
+    font-size: 10pt;
+}
+
+p {
+    font-size: 40pt;
+}
+
+a {
+    font-size: 39pt;
+    text-decoration: none;
+    transition: color, 0.5s;
+    
+
+
+}
+a:hover{
+    color: aliceblue;
+}
+
+
+
+label {
+    font-size: 55pt;
+}
+
+button {
+    font-size: 55pt;
+}
+
+
+input{
+    margin: 0px;
+    background-color: transparent;  
+    border-style: none;
+    border-bottom: 2px solid;
+
+ 
+    padding: 8px 64px 0px 64px;
+    width: 250px;  
+    color: black;
+    font-size: 45px;
+    transition: width 0.2s ease-in, padding 0.5s;
+}
+    
+input:hover > input::after{
+     content "Teste";
+}
+
+
+.bata{
+    display: flex;
+}
+.input-container{
+    margin: 0px;
+}
+
