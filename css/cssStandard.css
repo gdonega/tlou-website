@@ -22,27 +22,27 @@
 /*H*/
 
 h1 {
-    font-size: 55pt;
+    font-size: 5.5vw;
 }
 
 h2 {
-    font-size: 50pt;
+    font-size: 5vw;
 }
 
 h3 {
-    font-size: 40pt;
+    font-size: 4vw;
 }
 
 h4 {
-    font-size: 30pt;
+    font-size: 3vw;
 }
 
 h5 {
-    font-size: 20pt;
+    font-size: 2vw;
 }
 
 h6 {
-    font-size: 10pt;
+    font-size: 1vw;
 }
 
 
@@ -50,7 +50,7 @@ h6 {
 /*P*/
 
 p {
-    font-size: 40pt;
+    font-size: 3vw;
 }
 
 
@@ -58,7 +58,7 @@ p {
 
 a {
     color: white;
-    font-size: 39pt;
+    font-size: 2.7vw;
     text-decoration: none;
     transition: color, 0.5s;
 }
@@ -85,6 +85,7 @@ input {
     background-color: transparent;
     border-style: none;
     border-bottom: 2px solid;
+    border-color: white;
 
 
     padding: 8px 64px 0px 64px;
@@ -102,18 +103,17 @@ input {
     display: inline-block;
     width: 2px;
     height: 0px;
-    padding: px;
-    background-color: black;
+    background-color: white;
 
     transition: height .2s;
 }
 
 .input-container input:hover + span {
-    height: 50pt;
+    height: 3vw;
 }
 
 .input-container input:focus + span {
-    height: 50pt;
+    height: 3vw;
 }
 
 
@@ -132,39 +132,51 @@ label {
 nav {
     /*flex do nav*/
     display: flex;
-    align-content: center;
-    background-color: black;
     align-items: center;
+    justify-content: center;
+
+
+
+
 
     /*outras configurações*/
-    padding-left: 60px;
+    background-color: black;
+    padding-left: 5vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     left: 0px;
     right: 0px;
     top: 0px;
     z-index: 500;
+    align-items: center;
 
 
 }
 
-.links {
+nav .links {
     /*flex do nav*/
     flex: 2;
 
     /*flex dos links*/
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 10px;
+    align-self: center;
+    flex-wrap: wrap;
+
 }
 
 
+nav .imagem {
+    flex: 0;
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
 
-
-nav img {
-    width: 70px;
-
+nav .imagem a img {
+    width: 3.6vw;
 }
 
 /*/nav bar - fim/*/
@@ -174,21 +186,38 @@ nav img {
 /*primeiraParte - inicio*/
 
 #primeiraParte {
+    /*flex*/
+    display: flex;
+    flex-direction: column-reverse;
+
     /*configuração da imagem*/
     background-image: url(../media/imagem2_5.jpg);
     background-size: 100%;
     background-attachment: fixed;
 
     /*configuração do fundo em si*/
-    width: 100vw;
+    width: 100%;
     height: 50vw;
 }
 
-#primeiraParte img {
-    position: absolute;
-    right: 100px;
-    bottom: 100px;
-    width: 30%;
+
+#logo {
+    flex: 1;
+    order: 99;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+#primeiraParte #logo img {
+    order: 99;
+    align-content: flex-end;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 5vw;
+    margin-right: 3vw;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 /*/primeiraParte - fim/*/
@@ -199,7 +228,7 @@ nav img {
     background-color: black;
 
     /*configuração do fundo em si*/
-    width: 100vw;
+    width: 100%;
     height: 50vw;
 
     display: flex;
@@ -208,6 +237,7 @@ nav img {
 }
 
 #segundaParte #part1 {
+    /*flex*/
     align-self: flex-end;
     flex: 1;
     display: flex;
@@ -220,20 +250,20 @@ nav img {
 }
 
 #segundaParte #part1 #img1 {
+    /*flex*/
+    align-self: flex-end;
     width: 95%;
     height: 95%;
-    align-self: flex-end;
-
-
-
 }
 
 #segundaParte #part2 {
+    /*flex*/
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    /*outras configs*/
     margin-right: 4vw;
 
 
@@ -253,23 +283,359 @@ nav img {
 /*/terceiraParte - inicio/*/
 
 #terceiraParte {
+    /*flex*/
+    display: flex;
+
+    /*outras configs*/
     background-color: white;
 
     /*configuração do fundo em si*/
-    width: 100vw;
-    height: 50vw;
-
-    display: flex;
-}
-
-#terceiraParte img{
     width: 100%;
+
+
+
+}
+
+#divimg {
+    /*flex do pai*/
+    flex: 1;
+    /*proprio flex*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#terceiraParte img {
+
+    width: 40vw;
     height: 100%;
+
 }
 
 
-#terceiraParte #textos{
-    
+#textos {
+    /*flex do pai*/
+    flex: 2;
+    /*prorprio flex*/
+    display: flex;
+    flex-direction: column;
+}
+
+#tp1 {
+    /*flex*/
+    flex: 1;
+
+    /*outras configurações*/
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+#tp2 {
+    /*flex*/
+    flex: 1;
+
+    /*proprio flex*/
+    display: flex;
+    /*outras configurações*/
+    align-self: flex-end;
+    align-items: center;
+    text-align: right;
 }
 
 /*/terceiraParte - fim/*/
+
+/*/QuartaParte - inicio/*/
+
+/*configurações gerais de todas as partes - inicio*/
+
+#quartaParte {
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*configurações gerais de todas as partes - inicio*/
+
+/*configurações especificas do tipo 1 - inicio*/
+
+.quat_1 {
+    /*proprio flex*/
+    display: flex;
+
+    /*outras configurações*/
+    background-color: black;
+    color: white;
+    min-width: 100%;
+    min-height: 50vw;
+    padding: 2vw;
+}
+
+.quat_1_div_img {
+
+
+    align-self: center;
+}
+
+.quat_1_div_img img {
+    width: 35vw;
+}
+
+.quat_1_div_txt {
+    /*flex do pai*/
+    flex: 2;
+    align-self: center;
+
+    /*outras configs*/
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.quat_1_div_txt p {
+    font-size: 3vw;
+}
+
+/*configurações especificas do tipo 1 - fim*/
+
+/*configurações especificas do tipo 2 - inicio*/
+
+.quat_2 {
+    /*proprio flex*/
+    display: flex;
+
+    /*outras configurações*/
+    background-color: black;
+    color: white;
+
+    min-width: 100%;
+    min-height: 50vw;
+    padding: 2vw;
+}
+
+.quat_2_div_img {
+    align-self: center;
+
+}
+
+.quat_2_div_img img {
+    width: 35vw;
+}
+
+.quat_2_div_txt {
+    /*flex do pai*/
+    flex: 2;
+    align-self: center;
+
+    /*outras configs*/
+    text-align: left;
+    padding-right: 2vw;
+}
+
+.quat_2_div_txt p {
+    font-size: 3vw;
+}
+
+/*configurações especificas do tipo 2 - fim*/
+
+/*/QuartaParte - fim/*/
+
+/*/Quinta Parte - inicio/*/
+
+#quintaParte h1 {
+    text-align: center;
+    margin: 3vw;
+}
+
+#conteudoQuintaParte {
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*ModelOne - inicio*/
+
+.quintModelOne {
+    flex: 1;
+    display: flex;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.quintModelOne img {
+    width: 55vw;
+    height: 100%;
+}
+
+.quintModelOne p {
+    align-self: flex-end;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+/*ModelOne - fim*/
+
+/*ModelTwo - inicio*/
+
+.QuintModelTwo {
+    /*flex*/
+    flex: 1;
+    display: flex;
+
+    /*outras configs*/
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.QuintModelTwo img {
+    width: 55vw;
+    height: 100%;
+}
+
+.QuintModelTwo p {
+    align-self: flex-end;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+/*ModelTwo - fim*/
+
+/*Videos - inicio*/
+
+.QuintVideo {
+    /*flex*/
+    flex-direction: column;
+    /*outras configs*/
+    margin: 5vw;
+    display: flex;
+}
+
+.QuintVideo p {
+    /*flex*/
+    align-self: center;
+}
+
+.QuintVideo video {
+    width: 55vw;
+    align-self: center;
+}
+
+/*Videso - fim*/
+
+/*/Quinta Parte - fim/*/
+
+/*/footer - inicio/*/
+
+footer {
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+
+    /*outras configs*/
+    background-color: black;
+    color: white;
+
+}
+
+footer h1 {
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+.atualisacao {
+    margin-top: 5vw;
+    margin-left: 5vw;
+    height: 100%;
+    margin-bottom: 5vw;
+}
+
+.EntradaDeDados {
+    /*flex proprio*/
+    display: flex;
+    
+    /*outras configs*/
+    flex-direction: column;
+}
+
+.EntradaDeDados * {
+    color: white;
+    font-size: 3vw;
+}
+
+.entradaNome{
+    /*flex proprio*/
+    display: flex;
+    
+    /*outras configs*/
+    margin-bottom: 6vw;    
+}
+.entradaEmail {
+    display: flex;
+    
+    margin-bottom: 6vw;
+}
+.tamnhoEsp  {
+    font-size: 4vw !important;
+}
+.BotEnvi {
+    /*flex proprio*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    /*outras configs*/
+    margin-left: 20vw;
+
+}
+
+.BotEnvi button {
+    background-color: black;
+    color: white;
+
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    height: 3vw;
+    
+    font-size: 3.5vw;
+    
+    transition: color, 0.3s;
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.divSpanBtn {
+    /**flex do pai*/
+    align-self: flex-start;
+    
+    /*flex proprio*/
+    display: flex;
+
+}
+
+.divSpanBtn span.spanBtn {
+    /*flex do pai*/
+    align-self: center;
+
+    /*outras configss*/
+    content: '';
+    display: inline-block;
+    width: 6.8vw;
+    margin-top: 0.4vw;
+    padding: 0.1vw;
+    background-color: transparent;
+
+
+    border: solid;
+    border-width: 0.1vw;
+    border-top: none;
+}
+
+/*/footer - fim/*/
+
+
