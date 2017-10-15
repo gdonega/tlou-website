@@ -79,8 +79,9 @@ a:hover {
 
 
 /*input em si*/
-
+@media screen and (min-width: 800px){
 input {
+    
     margin: 0px;
     background-color: transparent;
     border-style: none;
@@ -95,7 +96,25 @@ input {
     transition: width 0.2s ease-in, padding 0.5s;
 }
 
+}
+@media screen and (max-width: 800px){
+input {
+    
+    margin: 0px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 2px solid;
+    border-color: white;
 
+
+    padding: 8px 64px 0px 64px;
+    width: 25px;
+    color: black;
+    font-size: 45px;
+    transition: width 0.2s ease-in, padding 0.5s;
+}
+
+}
 /*barra ao lado*/
 
 .input-container span.border {
@@ -207,7 +226,6 @@ label {
 
     /*/////////*configurando a navegação mobile*/
     /*********configuração de visualização do site*/
-    
     /*barra nav*/
     .navegSecun {
         /*flex*/
@@ -238,21 +256,21 @@ label {
     .navegacaoMobile {
         display: none;
     }
-    
+
     /*configuração do X*/
-    .botaoEscondedor{
+    .botaoEscondedor {
         display: none;
     }
-    
+
     /*******configuração de visualização da nav (tela cheia)*/
     /*barra nav(tela cheia)*/
-    .navegSecun.confgTWO{
+    .navegSecun.confgTWO {
         display: flex;
         background-color: black;
         width: 100%;
         height: 100%;
     }
-    
+
     /*botão de exibir o menu*/
     .botaoMobile.sumiu {
         display: none;
@@ -274,31 +292,31 @@ label {
         top: 0;
         left: 0;
         z-index: 100;
-    } 
+    }
     /*configuração dos links para a navegação suspensa*/
-    a.NavMenu{
+    a.NavMenu {
         font-size: 10vw;
     }
-    
+
     /*botão de fechar o menu*/
     .botaoEscondedor {
         margin-top: 4vw;
         margin-left: 0.4%;
         width: auto;
-        
+
         font-size: 4vw;
-        
+
         position: fixed;
         left: 70%;
-        
+
         color: white;
         background-color: transparent;
         border-color: white;
         border-style: dashed;
     }
-    
+
     /*configuração do X*/
-    .botaoEscondedor.exibido{
+    .botaoEscondedor.exibido {
         display: block;
         font-size: 20vw;
     }
@@ -408,63 +426,125 @@ label {
 
 /*/terceiraParte - inicio/*/
 
-#terceiraParte {
-    /*flex*/
-    display: flex;
+@media screen and (min-width: 800px) {
+    #terceiraParte {
+        /*flex*/
+        display: flex;
 
-    /*outras configs*/
-    background-color: white;
+        /*outras configs*/
+        background-color: white;
 
-    /*configuração do fundo em si*/
-    width: 100%;
+        /*configuração do fundo em si*/
+        width: 100%;
 
 
 
+    }
+
+    #divimg {
+        /*flex do pai*/
+        flex: 1;
+        /*proprio flex*/
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #terceiraParte img {
+
+        width: 40vw;
+        height: 100%;
+
+    }
+
+
+    #textos {
+        /*flex do pai*/
+        flex: 2;
+        /*prorprio flex*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tp1 {
+        /*flex*/
+        flex: 1;
+
+        /*outras configurações*/
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+
+    #tp2 {
+        /*flex*/
+        flex: 1;
+
+        /*proprio flex*/
+        display: flex;
+        /*outras configurações*/
+        align-self: flex-end;
+        align-items: center;
+        text-align: right;
+    }
 }
 
-#divimg {
-    /*flex do pai*/
-    flex: 1;
-    /*proprio flex*/
-    display: flex;
-    flex-direction: row-reverse;
-}
+@media screen and (max-width: 800px) {
+    #terceiraParte {
+        /*flex*/
+        display: flex;
+        flex-direction: column;
+        /*outras configs*/
+        background-color: white;
 
-#terceiraParte img {
-
-    width: 40vw;
-    height: 100%;
-
-}
+        /*configuração do fundo em si*/
+        width: 100%;
 
 
-#textos {
-    /*flex do pai*/
-    flex: 2;
-    /*prorprio flex*/
-    display: flex;
-    flex-direction: column;
-}
 
-#tp1 {
-    /*flex*/
-    flex: 1;
+    }
 
-    /*outras configurações*/
-    margin-left: 1vw;
-    margin-top: 1vw;
-}
+    #divimg {
+        /*flex do pai*/
+        flex: ;
+        /*proprio flex*/
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
-#tp2 {
-    /*flex*/
-    flex: 1;
+    #terceiraParte img {
 
-    /*proprio flex*/
-    display: flex;
-    /*outras configurações*/
-    align-self: flex-end;
-    align-items: center;
-    text-align: right;
+        width: 40vw;
+        height: 100%;
+
+    }
+
+
+    #textos {
+        /*flex do pai*/
+        flex: 2;
+        /*prorprio flex*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tp1 {
+        /*flex*/
+        flex: 1;
+
+        /*outras configurações*/
+        font-size: 10vw;
+    }
+
+    #tp2 {
+        /*flex*/
+        flex: 1;
+
+        margin: 2vw;
+        /*proprio flex*/
+        display: flex;
+        /*outras configurações*/
+
+        font-size: 8vw;
+    }
 }
 
 /*/terceiraParte - fim/*/
@@ -472,6 +552,100 @@ label {
 /*/QuartaParte - inicio/*/
 
 /*configurações gerais de todas as partes - inicio*/
+@media screen and (max-width: 800px) {
+
+#quartaParte {
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*configurações gerais de todas as partes - inicio*/
+
+/*configurações especificas do tipo 1 - inicio*/
+
+.quat_1 {
+    /*proprio flex*/
+    display: flex;
+    flex-direction: column;
+
+    /*outras configurações*/
+    background-color: black;
+    color: white;
+    min-width: 100%;
+    min-height: 50vw;
+    padding: 2vw;
+}
+
+.quat_1_div_img {
+
+
+    align-self: center;
+}
+
+.quat_1_div_img img {
+    width: 35vw;
+}
+
+.quat_1_div_txt {
+    /*flex do pai*/
+    flex: 2;
+    align-self: center;
+
+    /*outras configs*/
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.quat_1_div_txt p {
+    font-size: 7vw;
+}
+
+/*configurações especificas do tipo 1 - fim*/
+
+/*configurações especificas do tipo 2 - inicio*/
+
+.quat_2 {
+    /*proprio flex*/
+    display: flex;
+    flex-direction: column;
+
+    /*outras configurações*/
+    background-color: black;
+    color: white;
+
+    min-width: 100%;
+    min-height: 50vw;
+    padding: 2vw;
+}
+
+.quat_2_div_img {
+    align-self: center;
+
+}
+
+.quat_2_div_img img {
+    width: 35vw;
+}
+
+.quat_2_div_txt {
+    /*flex do pai*/
+    flex: 2;
+    align-self: center;
+
+    /*outras configs*/
+    text-align: left;
+    padding-right: 2vw;
+}
+
+.quat_2_div_txt p {
+    font-size: 7vw;
+}
+
+/*configurações especificas do tipo 2 - fim*/
+}
+@media screen and (min-width: 800px) {
 
 #quartaParte {
     /*flex*/
@@ -561,11 +735,11 @@ label {
 }
 
 /*configurações especificas do tipo 2 - fim*/
-
+}
 /*/QuartaParte - fim/*/
 
 /*/Quinta Parte - inicio/*/
-
+@media screen and (min-width: 800px) {
 #quintaParte h1 {
     text-align: center;
     margin: 3vw;
@@ -649,7 +823,104 @@ label {
 }
 
 /*Videso - fim*/
+}
 
+@media screen and (max-width: 800px) {
+#quintaParte h1 {
+    text-align: center;
+    margin: 3vw;
+}
+
+#conteudoQuintaParte {
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*ModelOne - inicio*/
+
+.quintModelOne {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.quintModelOne img {
+    width: 90vw;
+    height: 100%;
+    align-self: center;
+}
+
+.quintModelOne p {
+    align-self: center;
+    font-size: 4vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+/*ModelOne - fim*/
+
+/*ModelTwo - inicio*/
+
+.QuintModelTwo {
+    /*flex*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    /*outras configs*/
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.QuintModelTwo img {
+    width: 90vw;
+    height: 100%;
+    align-self: center;
+}
+
+.QuintModelTwo p {
+    font-size: 4vw;
+    align-self: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    order: 1;
+}
+
+/*ModelTwo - fim*/
+/*Videos - inicio*/
+
+.QuintVideo {
+    /*flex*/
+    flex-direction: column;
+    /*outras configs*/
+    margin: 5vw;
+    display: flex;
+    
+}
+
+.QuintVideo p {
+    /*flex*/
+    align-self: center;
+    
+    /*outras configs*/
+    font-size: 4vw;
+}
+
+.QuintVideo video {
+    width: 90vw;
+    height: 100%;
+    align-self: center;
+}
+
+/*Videso - fim*/
+}
 /*/Quinta Parte - fim/*/
 
 /*/footer - inicio/*/
@@ -733,6 +1004,7 @@ footer h1 {
 
     transition: color, 0.3s;
 }
+
 .BotEnvi h1 {
     background-color: black;
     color: black;
