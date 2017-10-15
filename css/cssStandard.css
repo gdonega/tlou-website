@@ -129,54 +129,180 @@ label {
 
 /*/nav bar - inicio/*/
 
-nav {
-    /*flex do nav*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/**--------*pcs*/
+
+@media screen and (min-width: 800px) {
+
+    nav {
+        /*flex do nav*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
 
 
 
 
-    /*outras configurações*/
-    background-color: black;
-    padding-left: 5vw;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 500;
-    align-items: center;
+        /*outras configurações*/
+        background-color: black;
+        padding-left: 5vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        z-index: 500;
+        align-items: center;
 
 
+    }
+
+    nav .links {
+        /*flex do nav*/
+        flex: 2;
+
+        /*flex dos links*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
+
+    }
+
+
+    nav .imagem {
+        flex: 0;
+        display: flex;
+        align-self: center;
+        align-items: center;
+    }
+
+    nav .imagem a img {
+        width: 3.6vw;
+    }
+
+    /*não exibir menu secundario*/
+    .botaoMobile {
+        display: none;
+    }
+    .tituloMobile {
+        display: none;
+    }
+    .navegacaoMobile {
+        display: none;
+    }
 }
 
-nav .links {
-    /*flex do nav*/
-    flex: 2;
 
-    /*flex dos links*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-self: center;
-    flex-wrap: wrap;
+/*--------*mobiles*/
 
-}
+@media screen and (max-width: 800px) {
+    /*retirando a navegação de pc*/
+    nav {
+        display: none;
+    }
 
 
-nav .imagem {
-    flex: 0;
-    display: flex;
-    align-self: center;
-    align-items: center;
-}
+    /*/////////*configurando a navegação mobile*/
+    /*********configuração de visualização do site*/
+    
+    /*barra nav*/
+    .navegSecun {
+        /*flex*/
+        display: flex;
 
-nav .imagem a img {
-    width: 3.6vw;
+        /*outras configs*/
+        background-color: black;
+        position: fixed;
+        width: 100%;
+
+    }
+
+    /*botão de exibir o menu*/
+    .botaoMobile {
+        /*flex*/
+        flex: 1;
+        /*outras configs*/
+        background-color: black;
+        border: none;
+
+    }
+    .botaoMobile img {
+        width: 50px;
+    }
+
+
+    /*links*/
+    .navegacaoMobile {
+        display: none;
+    }
+    
+    /*configuração do X*/
+    .botaoEscondedor{
+        display: none;
+    }
+    
+    /*******configuração de visualização da nav (tela cheia)*/
+    /*barra nav(tela cheia)*/
+    .navegSecun.confgTWO{
+        display: flex;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*botão de exibir o menu*/
+    .botaoMobile.sumiu {
+        display: none;
+    }
+
+
+    /*imagem do botaoMobile*/
+    .botaoMenu.exibido {
+        display: none;
+    }
+
+    /*links*/
+    .navegacaoMobile.exibido {
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    } 
+    /*configuração dos links para a navegação suspensa*/
+    a.NavMenu{
+        font-size: 10vw;
+    }
+    
+    /*botão de fechar o menu*/
+    .botaoEscondedor {
+        margin-top: 4vw;
+        margin-left: 0.4%;
+        width: auto;
+        
+        font-size: 4vw;
+        
+        position: fixed;
+        left: 70%;
+        
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-style: dashed;
+    }
+    
+    /*configuração do X*/
+    .botaoEscondedor.exibido{
+        display: block;
+        font-size: 20vw;
+    }
+
 }
 
 /*/nav bar - fim/*/
@@ -554,7 +680,7 @@ footer h1 {
 .EntradaDeDados {
     /*flex proprio*/
     display: flex;
-    
+
     /*outras configs*/
     flex-direction: column;
 }
@@ -564,21 +690,24 @@ footer h1 {
     font-size: 3vw;
 }
 
-.entradaNome{
+.entradaNome {
     /*flex proprio*/
     display: flex;
-    
+
     /*outras configs*/
-    margin-bottom: 6vw;    
-}
-.entradaEmail {
-    display: flex;
-    
     margin-bottom: 6vw;
 }
-.tamnhoEsp  {
+
+.entradaEmail {
+    display: flex;
+
+    margin-bottom: 6vw;
+}
+
+.tamnhoEsp {
     font-size: 4vw !important;
 }
+
 .BotEnvi {
     /*flex proprio*/
     display: flex;
@@ -599,10 +728,14 @@ footer h1 {
     border: none;
     padding: 0px;
     height: 3vw;
-    
+
     font-size: 3.5vw;
-    
+
     transition: color, 0.3s;
+}
+.BotEnvi h1 {
+    background-color: black;
+    color: black;
 }
 
 button:hover {
@@ -612,7 +745,7 @@ button:hover {
 .divSpanBtn {
     /**flex do pai*/
     align-self: flex-start;
-    
+
     /*flex proprio*/
     display: flex;
 
@@ -637,5 +770,3 @@ button:hover {
 }
 
 /*/footer - fim/*/
-
-
