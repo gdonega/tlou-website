@@ -8,7 +8,7 @@
 </head>
 
 <body id="body">
-    <!--navegação pc -- inicio-->
+    <!--navegação pc -inicio-->
 
     <nav>
         <div class="imagem">
@@ -23,18 +23,18 @@
             <a href=#quintaParte>DESENVOLVIMENTO</a>
         </div>
     </nav>
-    <!--navegação pc -- inicio-->
+    <!--navegação pc -inicio-->
 
-    <!--navegação mobile -- inicio-->
+    <!--navegação mobile -inicio-->
     <div class="navegSecun">
 
         <button class="botaoMobile"> <img class="botaoMenu" src="media/imagem1.png" alt="menu"></button>
 
         <nav class="navegacaoMobile">
+
+            <button class="botaoEscondedor">X</button>
+
             <ul>
-                <button class="botaoEscondedor">X</button>
-
-
                 <li><a href=#segundaParte target="_self">ESCOPO</a></li>
                 <li><a href=#quartaParte target="_self">FUNCIONALIDADES</a></li>
                 <li><a href=#quintaParte target="_self">DESENVOLVIMENTO</a></li>
@@ -61,7 +61,7 @@
                 $("a").removeClass('NavMenu');
                 $(".botaoEscondedor").removeClass('exibido');
             })
-            
+
             $("li a").click(function() {
                 $(".navegacaoMobile").removeClass('exibido');
                 $(".tituloMobile").removeClass('exibido');
@@ -73,16 +73,16 @@
 
         </script>
     </div>
-    <!--navegação mobile -- fim -->
+    <!--navegação mobile -fim -->
 
-    <section id="primeiraParte">
+    <div id="primeiraParte">
         <div id="logo">
             <img src="media/imagem2.png" alt="Nome do Projeto">
         </div>
 
-    </section>
+    </div>
 
-    <section id="segundaParte">
+    <div id="segundaParte">
         <div id="part1">
             <img src="media/imagem5.png" alt="Foto do jogo" id="img1">
         </div>
@@ -92,7 +92,7 @@
             <img src="media/imagem2.png" alt="Nome do Projeto" id="img3">
         </div>
 
-    </section>
+    </div>
 
 
 
@@ -108,8 +108,8 @@
     </section>
 
 
-    <section id="quartaParte">
-        <section class="quat_1">
+    <div id="quartaParte">
+        <div class="quat_1">
             <div class="quat_1_div_img">
                 <img src="media/imagem6.png" alt="Imagem do Projeto">
             </div>
@@ -117,9 +117,9 @@
             <div class="quat_1_div_txt">
                 <p>A equipe precisou criar novos motores de jogo para The Last of Us a fim de satisfazerem suas necessidades. A inteligência artificial foi criada para coordenar se com os jogadores em um nível íntimo, indo de encontro aos elementos de acao de outros jogos; a adicao de Ellie como uma inteligencia artificial foi uma grande contribuicao para o motor de jogo. A equipe colocou intencionalmente uma característica em que Ellie sempre permanece perto de Joel com o objetivo de impedir que ela seja vista como um fardo. O programador Max Dyckhoff afirmou que tentou imaginar as experiências da personagem no decorrer dos eventos do jogo em uma tentativa de alcancar maior realismo.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="quat_2">
+        <div class="quat_2">
 
             <div class="quat_2_div_txt">
                 <p>A inteligência artificial dos inimigos foi considerada uma das partes mais importantes de The Last of Us, sendo desenvolvida para estudar o ambiente ao redor e encontrar táticas para atacar o jogador, randomicamente escolhendo uma baseada nos dados. Essa singularidade da jogabilidade foi um fator na tentativa de fazer com que os jogadores sentissem emocoes para com os oponentes. O motor de iluminacao também foi criado para incluir luzes de preenchimento, em que os raios do Sol entram em espacos e refletem nas superfícies.</p>
@@ -128,35 +128,35 @@
             <div class="quat_2_div_img">
                 <img src="media/imagem7.png" alt="Imagem do Projeto">
             </div>
-        </section>
-    </section>
+        </div>
+    </div>
 
 
     <section id="quintaParte">
-        <h1>desenvolvimento do jogo</h1>
+        <h2>desenvolvimento do jogo</h2>
         <div id="conteudoQuintaParte">
-            <section class="quintModelOne">
+            <div class="quintModelOne">
                 <img src="media/imagem8.jpg" alt="primeira imagem do jogo">
                 <p>primeira imagem do jogo</p>
-            </section>
+            </div>
 
-            <section class="QuintModelTwo">
+            <div class="QuintModelTwo">
                 <p>imagem do primeiro trailer do jogo</p>
                 <img src="media/imagem9.jpg" alt="imagem do primeiro trailer do jogo">
 
-            </section>
+            </div>
 
-            <section class="QuintModelTwo">
+            <div class="QuintModelTwo">
                 <img src="media/imagem10.png" alt="imagem do primeiro trailer do jogo">
                 <p>imagem do primeiro trailer do jogo</p>
-            </section>
+            </div>
 
-            <section class="QuintVideo">
+            <div class="QuintVideo">
                 <p>trailer do jogo</p>
                 <video controls>
                     <source src="media/trailer.mp4" type="video/mp4">
                 </video>
-            </section>
+            </div>
         </div>
     </section>
 
@@ -191,7 +191,7 @@
                     <div class="divSpanBtn">
                         <span class="spanBtn"></span>
                     </div>
-                    
+
                     <h1>GQB</h1>
                 </div>
             </form>

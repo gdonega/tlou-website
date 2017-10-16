@@ -10,7 +10,7 @@
 /*/ configuração de todos os objetos - inicio/*/
 
 * {
-    font-family: He, Segoe UI;
+    font-family: He, 'Segoe UI';
     box-sizing: border-box;
     margin: 0px;
 }
@@ -79,42 +79,45 @@ a:hover {
 
 
 /*input em si*/
-@media screen and (min-width: 800px){
-input {
-    
-    margin: 0px;
-    background-color: transparent;
-    border-style: none;
-    border-bottom: 2px solid;
-    border-color: white;
+
+@media screen and (min-width: 800px) {
+    input {
+
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+        border-bottom: 2px solid;
+        border-color: white;
 
 
-    padding: 8px 64px 0px 64px;
-    width: 250px;
-    color: black;
-    font-size: 45px;
-    transition: width 0.2s ease-in, padding 0.5s;
-}
-
-}
-@media screen and (max-width: 800px){
-input {
-    
-    margin: 0px;
-    background-color: transparent;
-    border-style: none;
-    border-bottom: 2px solid;
-    border-color: white;
-
-
-    padding: 8px 64px 0px 64px;
-    width: 25px;
-    color: black;
-    font-size: 45px;
-    transition: width 0.2s ease-in, padding 0.5s;
-}
+        padding: 8px 2px 0px 2px;
+        width: 250px;
+        color: black;
+        font-size: 45px;
+        transition: width 0.2s ease-in, padding 0.5s;
+    }
 
 }
+
+@media screen and (max-width: 800px) {
+    input {
+
+        margin: 0px;
+        background-color: transparent;
+        border-style: none;
+        border-bottom: 2px solid;
+        border-color: white;
+
+
+        padding: 0px 2px 0px 2px;
+        width: 40vw;
+        color: black;
+        font-size: 45px;
+        transition: width 0.2s ease-in, padding 0.5s;
+    }
+
+}
+
 /*barra ao lado*/
 
 .input-container span.border {
@@ -503,8 +506,7 @@ label {
     }
 
     #divimg {
-        /*flex do pai*/
-        flex: ;
+
         /*proprio flex*/
         display: flex;
         flex-direction: row-reverse;
@@ -542,7 +544,6 @@ label {
         /*proprio flex*/
         display: flex;
         /*outras configurações*/
-
         font-size: 8vw;
     }
 }
@@ -552,375 +553,363 @@ label {
 /*/QuartaParte - inicio/*/
 
 /*configurações gerais de todas as partes - inicio*/
+
 @media screen and (max-width: 800px) {
 
-#quartaParte {
-    /*flex*/
-    display: flex;
-    flex-direction: column;
+    #quartaParte {
+        /*flex*/
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*configurações gerais de todas as partes - inicio*/
+    /*configurações especificas do tipo 1 - inicio*/
+    .quat_1 {
+        /*proprio flex*/
+        display: flex;
+        flex-direction: column;
+
+        /*outras configurações*/
+        background-color: black;
+        color: white;
+        min-width: 100%;
+        min-height: 50vw;
+        padding: 2vw;
+    }
+
+    .quat_1_div_img {
+
+
+        align-self: center;
+    }
+
+    .quat_1_div_img img {
+        width: 35vw;
+    }
+
+    .quat_1_div_txt {
+        /*flex do pai*/
+        flex: 2;
+        align-self: center;
+
+        /*outras configs*/
+        text-align: justify;
+        padding-right: 2vw;
+    }
+
+    .quat_1_div_txt p {
+        font-size: 6vw;
+    }
+
+    /*configurações especificas do tipo 1 - fim*/
+    /*configurações especificas do tipo 2 - inicio*/
+    .quat_2 {
+        /*proprio flex*/
+        display: flex;
+        flex-direction: column;
+
+        /*outras configurações*/
+        background-color: black;
+        color: white;
+
+        min-width: 100%;
+        min-height: 50vw;
+        padding: 2vw;
+    }
+
+    .quat_2_div_img {
+        align-self: center;
+
+    }
+
+    .quat_2_div_img img {
+        width: 35vw;
+    }
+
+    .quat_2_div_txt {
+        /*flex do pai*/
+        flex: 2;
+        align-self: center;
+
+        /*outras configs*/
+        text-align: justify;
+        padding-right: 2vw;
+    }
+
+    .quat_2_div_txt p {
+        font-size: 6vw;
+    }
+
+    /*configurações especificas do tipo 2 - fim*/
 }
 
-
-/*configurações gerais de todas as partes - inicio*/
-
-/*configurações especificas do tipo 1 - inicio*/
-
-.quat_1 {
-    /*proprio flex*/
-    display: flex;
-    flex-direction: column;
-
-    /*outras configurações*/
-    background-color: black;
-    color: white;
-    min-width: 100%;
-    min-height: 50vw;
-    padding: 2vw;
-}
-
-.quat_1_div_img {
-
-
-    align-self: center;
-}
-
-.quat_1_div_img img {
-    width: 35vw;
-}
-
-.quat_1_div_txt {
-    /*flex do pai*/
-    flex: 2;
-    align-self: center;
-
-    /*outras configs*/
-    text-align: right;
-    padding-right: 2vw;
-}
-
-.quat_1_div_txt p {
-    font-size: 7vw;
-}
-
-/*configurações especificas do tipo 1 - fim*/
-
-/*configurações especificas do tipo 2 - inicio*/
-
-.quat_2 {
-    /*proprio flex*/
-    display: flex;
-    flex-direction: column;
-
-    /*outras configurações*/
-    background-color: black;
-    color: white;
-
-    min-width: 100%;
-    min-height: 50vw;
-    padding: 2vw;
-}
-
-.quat_2_div_img {
-    align-self: center;
-
-}
-
-.quat_2_div_img img {
-    width: 35vw;
-}
-
-.quat_2_div_txt {
-    /*flex do pai*/
-    flex: 2;
-    align-self: center;
-
-    /*outras configs*/
-    text-align: left;
-    padding-right: 2vw;
-}
-
-.quat_2_div_txt p {
-    font-size: 7vw;
-}
-
-/*configurações especificas do tipo 2 - fim*/
-}
 @media screen and (min-width: 800px) {
 
-#quartaParte {
-    /*flex*/
-    display: flex;
-    flex-direction: column;
+    #quartaParte {
+        /*flex*/
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*configurações gerais de todas as partes - inicio*/
+    /*configurações especificas do tipo 1 - inicio*/
+    .quat_1 {
+        /*proprio flex*/
+        display: flex;
+
+        /*outras configurações*/
+        background-color: black;
+        color: white;
+        min-width: 100%;
+        min-height: 50vw;
+        padding: 2vw;
+    }
+
+    .quat_1_div_img {
+
+
+        align-self: center;
+    }
+
+    .quat_1_div_img img {
+        width: 35vw;
+    }
+
+    .quat_1_div_txt {
+        /*flex do pai*/
+        flex: 2;
+        align-self: center;
+
+        /*outras configs*/
+        text-align: right;
+        padding-right: 2vw;
+    }
+
+    .quat_1_div_txt p {
+        font-size: 3vw;
+    }
+
+    /*configurações especificas do tipo 1 - fim*/
+    /*configurações especificas do tipo 2 - inicio*/
+    .quat_2 {
+        /*proprio flex*/
+        display: flex;
+
+        /*outras configurações*/
+        background-color: black;
+        color: white;
+
+        min-width: 100%;
+        min-height: 50vw;
+        padding: 2vw;
+    }
+
+    .quat_2_div_img {
+        align-self: center;
+
+    }
+
+    .quat_2_div_img img {
+        width: 35vw;
+    }
+
+    .quat_2_div_txt {
+        /*flex do pai*/
+        flex: 2;
+        align-self: center;
+
+        /*outras configs*/
+        text-align: left;
+        padding-right: 2vw;
+    }
+
+    .quat_2_div_txt p {
+        font-size: 3vw;
+    }
+
+    /*configurações especificas do tipo 2 - fim*/
 }
 
-
-/*configurações gerais de todas as partes - inicio*/
-
-/*configurações especificas do tipo 1 - inicio*/
-
-.quat_1 {
-    /*proprio flex*/
-    display: flex;
-
-    /*outras configurações*/
-    background-color: black;
-    color: white;
-    min-width: 100%;
-    min-height: 50vw;
-    padding: 2vw;
-}
-
-.quat_1_div_img {
-
-
-    align-self: center;
-}
-
-.quat_1_div_img img {
-    width: 35vw;
-}
-
-.quat_1_div_txt {
-    /*flex do pai*/
-    flex: 2;
-    align-self: center;
-
-    /*outras configs*/
-    text-align: right;
-    padding-right: 2vw;
-}
-
-.quat_1_div_txt p {
-    font-size: 3vw;
-}
-
-/*configurações especificas do tipo 1 - fim*/
-
-/*configurações especificas do tipo 2 - inicio*/
-
-.quat_2 {
-    /*proprio flex*/
-    display: flex;
-
-    /*outras configurações*/
-    background-color: black;
-    color: white;
-
-    min-width: 100%;
-    min-height: 50vw;
-    padding: 2vw;
-}
-
-.quat_2_div_img {
-    align-self: center;
-
-}
-
-.quat_2_div_img img {
-    width: 35vw;
-}
-
-.quat_2_div_txt {
-    /*flex do pai*/
-    flex: 2;
-    align-self: center;
-
-    /*outras configs*/
-    text-align: left;
-    padding-right: 2vw;
-}
-
-.quat_2_div_txt p {
-    font-size: 3vw;
-}
-
-/*configurações especificas do tipo 2 - fim*/
-}
 /*/QuartaParte - fim/*/
 
 /*/Quinta Parte - inicio/*/
+
 @media screen and (min-width: 800px) {
-#quintaParte h1 {
-    text-align: center;
-    margin: 3vw;
-}
+    #quintaParte h2 {
+        text-align: center;
+        margin: 3vw;
+    }
 
-#conteudoQuintaParte {
-    /*flex*/
-    display: flex;
-    flex-direction: column;
-}
+    #conteudoQuintaParte {
+        /*flex*/
+        display: flex;
+        flex-direction: column;
+    }
 
-/*ModelOne - inicio*/
+    /*ModelOne - inicio*/
+    .quintModelOne {
+        flex: 1;
+        display: flex;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
 
-.quintModelOne {
-    flex: 1;
-    display: flex;
-    margin-top: 1vw;
-    margin-bottom: 2vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
+    .quintModelOne img {
+        width: 55vw;
+        height: 100%;
+    }
 
-.quintModelOne img {
-    width: 55vw;
-    height: 100%;
-}
+    .quintModelOne p {
+        align-self: flex-end;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
 
-.quintModelOne p {
-    align-self: flex-end;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
+    /*ModelOne - fim*/
+    /*ModelTwo - inicio*/
+    .QuintModelTwo {
+        /*flex*/
+        flex: 1;
+        display: flex;
 
-/*ModelOne - fim*/
+        /*outras configs*/
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
 
-/*ModelTwo - inicio*/
+    .QuintModelTwo img {
+        width: 55vw;
+        height: 100%;
+    }
 
-.QuintModelTwo {
-    /*flex*/
-    flex: 1;
-    display: flex;
+    .QuintModelTwo p {
+        align-self: flex-end;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
 
-    /*outras configs*/
-    margin-top: 1vw;
-    margin-bottom: 2vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
+    /*ModelTwo - fim*/
+    /*Videos - inicio*/
+    .QuintVideo {
+        /*flex*/
+        flex-direction: column;
+        /*outras configs*/
+        margin: 5vw;
+        display: flex;
+    }
 
-.QuintModelTwo img {
-    width: 55vw;
-    height: 100%;
-}
+    .QuintVideo p {
+        /*flex*/
+        align-self: center;
+    }
 
-.QuintModelTwo p {
-    align-self: flex-end;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
+    .QuintVideo video {
+        width: 55vw;
+        align-self: center;
+    }
 
-/*ModelTwo - fim*/
-
-/*Videos - inicio*/
-
-.QuintVideo {
-    /*flex*/
-    flex-direction: column;
-    /*outras configs*/
-    margin: 5vw;
-    display: flex;
-}
-
-.QuintVideo p {
-    /*flex*/
-    align-self: center;
-}
-
-.QuintVideo video {
-    width: 55vw;
-    align-self: center;
-}
-
-/*Videso - fim*/
+    /*Videso - fim*/
 }
 
 @media screen and (max-width: 800px) {
-#quintaParte h1 {
-    text-align: center;
-    margin: 3vw;
+    #quintaParte h2 {
+        text-align: center;
+        margin: 3vw;
+    }
+
+    #conteudoQuintaParte {
+        /*flex*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*ModelOne - inicio*/
+    .quintModelOne {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .quintModelOne img {
+        width: 90vw;
+        height: 100%;
+        align-self: center;
+    }
+
+    .quintModelOne p {
+        align-self: center;
+        font-size: 4vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    /*ModelOne - fim*/
+    /*ModelTwo - inicio*/
+    .QuintModelTwo {
+        /*flex*/
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        /*outras configs*/
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .QuintModelTwo img {
+        width: 90vw;
+        height: 100%;
+        align-self: center;
+    }
+
+    .QuintModelTwo p {
+        font-size: 4vw;
+        align-self: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        order: 1;
+    }
+
+    /*ModelTwo - fim*/
+    /*Videos - inicio*/
+    .QuintVideo {
+        /*flex*/
+        flex-direction: column;
+        /*outras configs*/
+        margin: 5vw;
+        display: flex;
+
+    }
+
+    .QuintVideo p {
+        /*flex*/
+        align-self: center;
+
+        /*outras configs*/
+        font-size: 4vw;
+    }
+
+    .QuintVideo video {
+        width: 90vw;
+        height: 100%;
+        align-self: center;
+    }
+
+    /*Videso - fim*/
 }
 
-#conteudoQuintaParte {
-    /*flex*/
-    display: flex;
-    flex-direction: column;
-}
-
-/*ModelOne - inicio*/
-
-.quintModelOne {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1vw;
-    margin-bottom: 2vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
-
-.quintModelOne img {
-    width: 90vw;
-    height: 100%;
-    align-self: center;
-}
-
-.quintModelOne p {
-    align-self: center;
-    font-size: 4vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-
-/*ModelOne - fim*/
-
-/*ModelTwo - inicio*/
-
-.QuintModelTwo {
-    /*flex*/
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-
-    /*outras configs*/
-    margin-top: 1vw;
-    margin-bottom: 2vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
-
-.QuintModelTwo img {
-    width: 90vw;
-    height: 100%;
-    align-self: center;
-}
-
-.QuintModelTwo p {
-    font-size: 4vw;
-    align-self: center;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    order: 1;
-}
-
-/*ModelTwo - fim*/
-/*Videos - inicio*/
-
-.QuintVideo {
-    /*flex*/
-    flex-direction: column;
-    /*outras configs*/
-    margin: 5vw;
-    display: flex;
-    
-}
-
-.QuintVideo p {
-    /*flex*/
-    align-self: center;
-    
-    /*outras configs*/
-    font-size: 4vw;
-}
-
-.QuintVideo video {
-    width: 90vw;
-    height: 100%;
-    align-self: center;
-}
-
-/*Videso - fim*/
-}
 /*/Quinta Parte - fim/*/
 
 /*/footer - inicio/*/
