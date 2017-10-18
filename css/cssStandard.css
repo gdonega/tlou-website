@@ -321,14 +321,14 @@ label {
 
     /*botão de fechar o menu*/
     .botaoEscondedor {
-        margin-top: 4vw;
-        margin-left: 0.4%;
+        margin-top: 40px;
+        margin-left: 40px;;
         width: auto;
 
         font-size: 4vw;
 
         position: fixed;
-        left: 70%;
+        right: 40px;
 
         color: white;
         background-color: transparent;
@@ -341,6 +341,12 @@ label {
         display: block;
         font-size: 20vw;
     }
+    
+    .navegacaoMobile ul li a{
+        font-size: 40px;
+    }
+    
+    
 
 }
 
