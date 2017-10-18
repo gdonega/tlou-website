@@ -248,10 +248,11 @@ label {
         /*outras configs*/
         background-color: black;
         border: none;
+        
 
     }
     .botaoMobile img {
-        width: 50px;
+        width: 1vw;
     }
 
 
