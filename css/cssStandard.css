@@ -257,6 +257,9 @@ label {
 
     }
     .botaoMobile img {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
         width: 10vw;
     }
 
