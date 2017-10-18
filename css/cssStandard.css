@@ -342,6 +342,13 @@ label {
         font-size: 20px;
     }
     
+    .botaoEscondedor{
+        position: absolute;
+        right: 0px;
+        top:0px;
+        margin:5px;
+    }
+    
     .navegacaoMobile ul li a{
         position: absolute;
         margin: 5px;
