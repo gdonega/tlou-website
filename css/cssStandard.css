@@ -12,11 +12,11 @@
 * {
     font-family: He, 'Segoe UI';
     box-sizing: border-box;
-    
+
 }
 
-:not(terceiraParte){
-    margin: 0px; 
+:not(terceiraParte) {
+    margin: 0px;
 }
 
 #body {
@@ -104,6 +104,24 @@ a:hover {
         font-size: 45px;
         transition: width 0.2s ease-in, padding 0.5s;
     }
+    /*barra ao lado*/
+    .input-container span.border {
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: 0px;
+        background-color: white;
+
+        transition: height .2s;
+    }
+
+    .input-container input:hover + span {
+        height: 3vw;
+    }
+
+    .input-container input:focus + span {
+        height: 3vw;
+    }
 
 }
 
@@ -126,25 +144,7 @@ a:hover {
 
 }
 
-/*barra ao lado*/
 
-.input-container span.border {
-    content: '';
-    display: inline-block;
-    width: 2px;
-    height: 0px;
-    background-color: white;
-
-    transition: height .2s;
-}
-
-.input-container input:hover + span {
-    height: 3vw;
-}
-
-.input-container input:focus + span {
-    height: 3vw;
-}
 
 
 /*/input - fim/*/
@@ -454,8 +454,8 @@ label {
         /*outras configs*/
         background-color: white;
 
-        
-        
+
+
         /*configuração do fundo em si*/
         width: 100%;
 
@@ -485,7 +485,7 @@ label {
         /*prorprio flex*/
         display: flex;
         flex-direction: column;
-        
+
     }
 
     #tp1 {
@@ -519,7 +519,7 @@ label {
         background-color: white;
         margin-top: 5vw;
         margin-left: 5vw;
-        margin-right: 0px;    
+        margin-right: 0px;
         margin-bottom: 0px;
         /*configuração do fundo em si*/
         width: 100%;
@@ -1052,5 +1052,6 @@ button:hover {
     border-width: 0.1vw;
     border-top: none;
 }
+
 
 /*/footer - fim/*/
