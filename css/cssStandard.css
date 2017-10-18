@@ -519,6 +519,8 @@ label {
         background-color: white;
         margin-top: 5vw;
         margin-left: 5vw;
+        margin-right: 0px;    
+        margin-bottom: 0px;
         /*configuração do fundo em si*/
         width: 100%;
 
