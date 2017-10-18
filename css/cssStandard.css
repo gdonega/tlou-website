@@ -136,8 +136,8 @@ a:hover {
 
 
         padding: 0px 2px 0px 0px;
-        width: 40vw;
-        height: 60px;
+        width: 40px;
+        height: 30px;
         color: black;
         font-size: 45px;
         transition: width 0.2s ease-in, padding 0.5s;
