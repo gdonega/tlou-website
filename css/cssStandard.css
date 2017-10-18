@@ -16,9 +16,10 @@
 }
 
 
-#body{
+#body {
     margin: 0px;
 }
+
 /*/ configuração de todos os objetos - fim/*/
 
 /*/ configuração dos titulos e paragrafos e links - inicio/*/
@@ -242,7 +243,6 @@ label {
         background-color: black;
         position: fixed;
         width: 100%;
-        height: 20vw;
         z-index: 200;
     }
 
@@ -250,17 +250,22 @@ label {
     .botaoMobile {
         /*flex*/
         flex: 1;
+
+        /*flex proprio*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         /*outras configs*/
         background-color: black;
         border: none;
-        
+
 
     }
     .botaoMobile img {
-        border: 0px;
-        margin: 0px;
-        padding: 0px;
+
+        /*outras configs*/
         width: 10vw;
+
     }
 
 
