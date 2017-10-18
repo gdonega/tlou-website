@@ -135,8 +135,9 @@ a:hover {
         border-color: white;
 
 
-        padding: 0px 2px 0px 2px;
+        padding: 0px 2px 0px 0px;
         width: 40vw;
+        height: 6vw;
         color: black;
         font-size: 45px;
         transition: width 0.2s ease-in, padding 0.5s;
