@@ -131,13 +131,13 @@ a:hover {
         margin: 0px;
         background-color: transparent;
         border-style: none;
-        border-bottom: 0.1vw solid;
+        border-bottom: 0.1px solid;
         border-color: white;
 
 
         padding: 0px 2px 0px 0px;
         width: 40vw;
-        height: 6vw;
+        height: 60px;
         color: black;
         font-size: 45px;
         transition: width 0.2s ease-in, padding 0.5s;
@@ -984,7 +984,11 @@ footer h1 {
 
         /*outras configs*/
         flex-direction: column;
+        font-size: 80px;
     }
+     
+        
+
 
     .EntradaDeDados * {
         color: white;
@@ -995,6 +999,7 @@ footer h1 {
         /*flex proprio*/
         display: flex;
 
+        
         /*outras configs*/
         margin-bottom: 6vw;
     }
