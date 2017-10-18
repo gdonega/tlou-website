@@ -343,7 +343,10 @@ label {
     }
     
     .navegacaoMobile ul li a{
+        position: absolute;
+        margin: 5px;
         font-size: 4px;
+        left: 0px;
     }
     
     
