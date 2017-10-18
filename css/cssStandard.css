@@ -339,11 +339,11 @@ label {
     /*configuração do X*/
     .botaoEscondedor.exibido {
         display: block;
-        font-size: 200px;
+        font-size: 20px;
     }
     
     .navegacaoMobile ul li a{
-        font-size: 40px;
+        font-size: 4px;
     }
     
     
