@@ -316,7 +316,7 @@ label {
     }
     /*configuração dos links para a navegação suspensa*/
     a.NavMenu {
-        font-size: 10vw;
+        font-size: 10px;
     }
 
     /*botão de fechar o menu*/
@@ -339,11 +339,11 @@ label {
     /*configuração do X*/
     .botaoEscondedor.exibido {
         display: block;
-        font-size: 20vw;
+        font-size: 200px;
     }
     
     .navegacaoMobile ul li a{
-        font-size: 4vw;
+        font-size: 40px;
     }
     
     
