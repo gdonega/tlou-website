@@ -517,7 +517,8 @@ label {
         flex-direction: column;
         /*outras configs*/
         background-color: white;
-        margin: 5vw;
+        margin-top: 5vw;
+        margin-left: 5vw;
         /*configuração do fundo em si*/
         width: 100%;
 
