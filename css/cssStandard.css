@@ -131,7 +131,7 @@ a:hover {
         margin: 0px;
         background-color: transparent;
         border-style: none;
-        border-bottom: 2px solid;
+        border-bottom: 0.1vw solid;
         border-color: white;
 
 
@@ -960,36 +960,73 @@ footer h1 {
     margin-bottom: 5vw;
 }
 
-.EntradaDeDados {
-    /*flex proprio*/
-    display: flex;
+@media screen and (max-width: 800px) {
+    .EntradaDeDados {
+        /*flex proprio*/
+        display: flex;
 
-    /*outras configs*/
-    flex-direction: column;
+        /*outras configs*/
+        flex-direction: column;
+    }
+
+    .EntradaDeDados * {
+        color: white;
+        font-size: 3vw;
+    }
+
+    .entradaNome {
+        /*flex proprio*/
+        display: flex;
+
+        /*outras configs*/
+        margin-bottom: 6vw;
+    }
+
+    .entradaEmail {
+        display: flex;
+
+        margin-bottom: 6vw;
+    }
+
+    .tamnhoEsp {
+        font-size: 4vw !important;
+    }
 }
 
-.EntradaDeDados * {
-    color: white;
-    font-size: 3vw;
+@media screen and (min-width: 800px) {
+    .EntradaDeDados {
+        /*flex proprio*/
+        display: flex;
+
+        /*outras configs*/
+        flex-direction: column;
+    }
+
+    .EntradaDeDados * {
+        color: white;
+        font-size: 3vw;
+    }
+
+    .entradaNome {
+        /*flex proprio*/
+        display: flex;
+
+        /*outras configs*/
+        margin-bottom: 6vw;
+    }
+
+    .entradaEmail {
+        display: flex;
+
+        margin-bottom: 6vw;
+    }
+
+    .tamnhoEsp {
+        font-size: 4vw !important;
+    }
 }
 
-.entradaNome {
-    /*flex proprio*/
-    display: flex;
 
-    /*outras configs*/
-    margin-bottom: 6vw;
-}
-
-.entradaEmail {
-    display: flex;
-
-    margin-bottom: 6vw;
-}
-
-.tamnhoEsp {
-    font-size: 4vw !important;
-}
 
 .BotEnvi {
     /*flex proprio*/
