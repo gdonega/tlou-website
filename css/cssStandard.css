@@ -12,7 +12,7 @@
 * {
     font-family: He, 'Segoe UI';
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0px; 
 }
 
 
@@ -450,7 +450,9 @@ label {
 
         /*outras configs*/
         background-color: white;
-
+        margin: 50vw !important;
+        
+        
         /*configuração do fundo em si*/
         width: 100%;
 
@@ -480,6 +482,7 @@ label {
         /*prorprio flex*/
         display: flex;
         flex-direction: column;
+        
     }
 
     #tp1 {
