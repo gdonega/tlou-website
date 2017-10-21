@@ -909,9 +909,9 @@ label {
 
     .quintModelOne p {
         align-self: center;
-        font-size: 4vw;
         margin-left: 1vw;
         margin-right: 1vw;
+        margin-top: 2vw;
     }
 
     /*ModelOne - fim*/
@@ -936,11 +936,11 @@ label {
     }
 
     .QuintModelTwo p {
-        font-size: 4vw;
         align-self: center;
         margin-left: 1vw;
         margin-right: 1vw;
         order: 1;
+        margin-top: 2vw;
     }
 
     /*ModelTwo - fim*/
@@ -957,9 +957,6 @@ label {
     .QuintVideo p {
         /*flex*/
         align-self: center;
-
-        /*outras configs*/
-        font-size: 4vw;
     }
 
     .QuintVideo video {
