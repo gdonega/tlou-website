@@ -31,11 +31,13 @@
 
 @media screen and (max-width: 800px) {
     h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
+    
 
+    
     h2 {
-        font-size: 19Px;
+        font-size: 21Px;
     }
 
     /*P*/
