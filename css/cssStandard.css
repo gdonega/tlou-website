@@ -336,8 +336,20 @@ label {
         z-index: 100;
     }
     /*configuração dos links para a navegação suspensa*/
-    a.NavMenu {
-        font-size: 10px;
+    .phat{
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    .phat li{
+
+        margin: 50px;
+        
+    }
+    .phat a{
+        font-size: 50px !important;
+
     }
 
     /*botão de fechar o menu*/
