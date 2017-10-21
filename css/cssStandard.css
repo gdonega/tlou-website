@@ -275,7 +275,6 @@ label {
     .botaoMobile {
         /*flex*/
         flex: 1;
-0px;
         /*flex proprio*/
         display: flex;
         flex-direction: row;
@@ -338,8 +337,7 @@ label {
     }
     /*configuração dos links para a navegação suspensa*/
     a.NavMenu {
-        font-size: 50px !important;
-        padding-bottom: 50px !important;
+        font-size: 10px;
     }
 
     /*botão de fechar o menu*/
