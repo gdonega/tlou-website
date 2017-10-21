@@ -42,7 +42,7 @@
 
     /*P*/
     p {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -949,7 +949,7 @@ label {
         /*flex*/
         flex-direction: column;
         /*outras configs*/
-        margin: 5vw;
+        margin-top: 9vw;
         display: flex;
 
     }
@@ -957,6 +957,7 @@ label {
     .QuintVideo p {
         /*flex*/
         align-self: center;
+        font-size: 20px;
     }
 
     .QuintVideo video {
