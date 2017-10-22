@@ -810,6 +810,7 @@ label {
 /*/Quinta Parte - inicio/*/
 
 @media screen and (min-width: 800px) {
+
     #quintaParte h2 {
         text-align: center;
         margin: 3vw;
@@ -875,6 +876,7 @@ label {
         /*outras configs*/
         margin: 5vw;
         display: flex;
+        
     }
 
     .QuintVideo p {
@@ -963,6 +965,8 @@ label {
         /*outras configs*/
         margin-top: 9vw;
         display: flex;
+        
+        padding-bottom: 50px;
 
     }
 
