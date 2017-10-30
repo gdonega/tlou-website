@@ -151,7 +151,7 @@ a:hover {
 
         margin: 0px;
         background-color: transparent;
-        border-style: solid;
+        border-bottom-style: solid !important;
         border-bottom: 0.1px solid;
         border-color: white;
 
