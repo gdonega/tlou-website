@@ -151,7 +151,7 @@ a:hover {
 
         margin: 0px;
         background-color: transparent;
-        border-style: none;
+        border-style: solid;
         border-bottom: 0.1px solid;
         border-color: white;
 
@@ -160,7 +160,7 @@ a:hover {
         width: 200px;
 
         color: black;
-        font-size: 45px;
+        font-size: 30px;
         transition: width 0.2s ease-in, padding 0.5s;
     }
 
@@ -876,7 +876,7 @@ label {
         /*outras configs*/
         margin: 5vw;
         display: flex;
-        
+
     }
 
     .QuintVideo p {
@@ -965,7 +965,7 @@ label {
         /*outras configs*/
         margin-top: 9vw;
         display: flex;
-        
+
         padding-bottom: 50px;
 
     }
