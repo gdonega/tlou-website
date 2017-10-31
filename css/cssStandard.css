@@ -155,7 +155,7 @@ a:hover {
         border-left-style: none !important;
         border-right-style: none !important;
         border-bottom-style: solid !important;
-        border-bottom: 10px solid !important;
+        border-bottom: 1px solid !important;
         border-color: white !important;
 
 
@@ -163,7 +163,7 @@ a:hover {
         width: 200px;
 
         color: black;
-        font-size: 30px;
+        font-size: 20px;
         transition: width 0.2s ease-in, padding 0.5s;
     }
 
