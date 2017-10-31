@@ -151,8 +151,11 @@ a:hover {
 
         margin: 0px;
         background-color: transparent;
+        border-top-style: none !important;
+        border-left-style: none !important;
+        border-right-style: none !important;
         border-bottom-style: solid !important;
-        border-bottom: 0.1px solid !important;
+        border-bottom: 10px solid !important;
         border-color: white !important;
 
 
