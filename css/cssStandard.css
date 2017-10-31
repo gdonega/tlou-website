@@ -163,7 +163,6 @@ a:hover {
         width: 200px;
 
         color: black;
-        font-size: 10px;
         transition: width 0.2s ease-in, padding 0.5s;
     }
 
